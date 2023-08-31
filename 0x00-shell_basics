@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# This script prints the absolute path name of the current working directory.
+
+# Get the absolute path of the current working directory using the 'pwd' command
+current_dir=$(pwd)
+
+# Print a message along with the absolute path
+echo "You are currently in the directory: $current_dir"
