@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# This script displays the current directory contents in a long format
+echo "Contents of the current directory:"
+ls -l
