@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# This script deletes files ending with ~ in the current directory
+for file in *~; do
+    if [ -f "$file" ]; then
+        echo "Deleting $file..."
+        rm "$file"
+    fi
+done
