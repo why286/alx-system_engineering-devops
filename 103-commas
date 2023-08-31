@@ -1,0 +1,1 @@
+ls -a1 | awk '{ORS = NR % 2 ? ", " : "\n"} {print $0}' | sed 's/, $/\n/'
