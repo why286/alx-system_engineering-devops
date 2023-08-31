@@ -1,9 +1,21 @@
+Absolutely, here's a script that displays the contents list of the current directory:
+
+```bash
 #!/bin/bash
 
-# This script prints the absolute path name of the current working directory.
+# This script displays the contents list of the current directory.
 
-# Get the absolute path of the current working directory using the 'pwd' command
-current_dir=$(pwd)
+# Use the 'ls' command to list the contents of the current directory
+ls
+```
 
-# Print a message along with the absolute path
-echo "You are currently in the directory: $current_dir"
+Follow these steps to use the script:
+
+1. Open a text editor.
+2. Copy and paste the script into the text editor.
+3. Save the file as `1-listit` in the directory where you want to list the contents.
+4. Open a terminal and navigate to the directory where you saved the script.
+5. Make the script executable with the command: `chmod +x 1-listit`
+6. Run the script with: `./1-listit`
+
+When you run the script, it will display the contents of the current directory, similar to the example you provided.
