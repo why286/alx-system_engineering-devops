@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# This script changes the working directory to the user's home directory
+
+# Retrieve the user's home directory using 'getent' command
+user_home=$(getent passwd $USER | cut -d: -f6)
+
+# Change the working directory to the user's home directory
+if [[ -d "$user_home" ]]; then
+    cd "$user_home"
+    echo "Changed working directory to: $user_home"
+else
+    echo "User home directory not found or inaccessible"
+fi
