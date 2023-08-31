@@ -1,0 +1,33 @@
+To create a magic file named `school.mgc` that can be used with the `file` command to detect School data files, you can follow these steps:
+
+1. Create a plain text file named `school.magic` using a text editor:
+   
+   ```bash
+   touch school.magic
+   ```
+
+2. Edit the `school.magic` file and add the following line:
+
+   ```
+   0 string SCHOOL
+   ```
+
+   This line specifies that the string "SCHOOL" should be detected at offset 0 in the file.
+
+3. Compile the `school.magic` file into a binary magic file named `school.mgc` using the `file` command:
+
+   ```bash
+   file -C -m school.magic
+   ```
+
+   This command compiles the magic file and creates `school.mgc`.
+
+4. Now you can use the `file` command with the `school.mgc` magic file to detect School data files:
+
+   ```bash
+   file -m school.mgc your_file
+   ```
+
+   Replace `your_file` with the path to the file you want to check.
+
+Remember that the magic file should be placed in a directory that `file` checks for magic files (often `/usr/share/file/magic` or a similar location).
