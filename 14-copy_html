@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# This script copies HTML files from current directory to parent directory if not existent or newer
+for file in *.html; do
+    if [ -f "../$file" ] && [ "$file" -nt "../$file" ]; then
+        echo "Copying $file..."
+        cp "$file" ".."
+    fi
+done
