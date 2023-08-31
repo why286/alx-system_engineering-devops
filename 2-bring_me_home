@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This script changes the working directory to the user's home directory
+
+# Get the user's home directory
+home_dir=$(getent passwd "$USER" | cut -d: -f6)
+
+# Change the working directory to the user's home directory
+cd "$home_dir"
+
+# Display a message to indicate the change
+echo "Changed working directory to: $home_dir"
