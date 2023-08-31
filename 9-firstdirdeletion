@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# This script deletes the directory named "my_first_directory" from /tmp/
+rmdir /tmp/my_first_directory
